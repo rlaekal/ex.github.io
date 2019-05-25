@@ -1,0 +1,14 @@
+<body style="background-color: slategrey">
+    <h1 style="color:crimson">결과입니다.</h1>
+
+{{total}}
+<a href="{%url 'home'%}" style="color:crimson">다시하기</a>
+<br>
+<h2 style="color: rgb(162, 255, 202)">택스트</h2>
+{{full}}
+<h2 style="color: slateblue">단어 카운트</h2>
+{% for word, howmany in dictionary%}
+{{word}} : {{howmany}}
+<br>
+{%endfor%}
+</body>
